@@ -30,7 +30,7 @@ void Ex1(int arr[], int n){
 		j--;
 	}
 	if (symmetric)
-		printf("symetric");
+		printf("symmetric");
 }
 
 int main(int argc, char *argv[]) {
