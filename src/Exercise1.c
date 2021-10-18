@@ -24,14 +24,14 @@ void Ex1(int arr[], int n){
 		if (arr[i] != arr[j])
 		{
 			symmetric = 0;
-			printf("Assymetric");
+			printf(" assymetric ");
 			break;
 		}
 		i++;
 		j--;
 	}
 	if (symmetric)
-		printf("symetric");
+		printf(" symetric ");
 }
 
 int main(int argc, char *argv[]) {
