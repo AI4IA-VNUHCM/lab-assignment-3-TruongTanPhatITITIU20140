@@ -12,12 +12,13 @@ Ex:
 #include <stdlib.h>
 #include <math.h>
 
-void Ex3(int in_arr[], int n){
+void Ex3(int in_arr[], int n)
+{
 	//Your codes here
-		int i;
+	int i;
 	int in_max = 1, in_len = 1, in_maxIdx = 0;
 	int de_max = 1, de_len = 1, de_maxIdx = 0;
-	for (int i = 1; i < n; i++)
+	for (i = 1; i < n; i++)
 	{
 		if (in_arr[i] > in_arr[i - 1])
 			in_len++;
@@ -43,6 +44,16 @@ void Ex3(int in_arr[], int n){
 			de_len = 1;
 		}
 	}
+	if (de_max < de_len)
+	{
+		de_max = de_len;
+		de_maxIdx = i - de_max;
+	}
+	if (in_max < in_len)
+	{
+		in_max = in_len;
+		in_maxIdx = i - in_max;
+	}
 	printf("Increasing ");
 	for (i = in_maxIdx; i < in_max + in_maxIdx; i++)
 		printf("%d ", in_arr[i]);
@@ -50,7 +61,6 @@ void Ex3(int in_arr[], int n){
 	for (i = de_maxIdx; i < de_max + de_maxIdx; i++)
 		printf("%d ", in_arr[i]);
 }
-
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	argc--;
