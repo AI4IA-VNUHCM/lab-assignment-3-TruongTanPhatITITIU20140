@@ -15,6 +15,7 @@ Ex:
 void Ex2(int arr[], int n){
 	//Your codes here
 	
+		
 }
 
 int main(int argc, char *argv[]) {
@@ -26,6 +27,15 @@ int main(int argc, char *argv[]) {
 	}
 	
 	Ex2(testcase, argc);
-	
+	for(int loop = 0; loop < 10; loop++)
+      printf("%d ", testcase[loop]);
 	return 0;
 }
+
+
+/*
+
+gcc .\src\Exercise2.c -o .\bin\Ex2.exe
+
+.\bin\Ex2.exe 2 5 3 4 8 6 7 9 2 
+*/

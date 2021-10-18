@@ -14,7 +14,24 @@ Ex:
 
 void Ex1(int arr[], int n){
 	//Your codes here
-    
+	//Your codes here
+	int mid = n / 2;
+	int i = 0, j = n - 1;
+	int symmetric = 1;
+
+	while (i < mid && j >= mid)
+	{
+		if (arr[i] != arr[j])
+		{
+			symmetric = 0;
+			printf("Assymetric");
+			break;
+		}
+		i++;
+		j--;
+	}
+	if (symmetric)
+		printf("symetric");
 }
 
 int main(int argc, char *argv[]) {
