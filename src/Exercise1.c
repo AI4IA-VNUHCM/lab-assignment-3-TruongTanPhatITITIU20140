@@ -14,7 +14,6 @@ Ex:
 
 void Ex1(int arr[], int n){
 	//Your codes here
-	//Your codes here
 	int mid = n / 2;
 	int i = 0, j = n - 1;
 	int symmetric = 1;
@@ -24,7 +23,7 @@ void Ex1(int arr[], int n){
 		if (arr[i] != arr[j])
 		{
 			symmetric = 0;
-			printf("Aasymmetric");
+			printf("aasymmetric");
 			break;
 		}
 		i++;
