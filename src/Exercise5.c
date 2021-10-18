@@ -13,16 +13,16 @@ ______________________________________
 
 void Ex5(int arr[], int n){
 	//Your codes here
-	int t = 0, po[n];
+	int t = 0, p[n];
 	for(int i = 0; i < n; i++){
 		if(arr[i] > 0) printf("%d ", arr[i]);
 		else{
-			po[t] = arr[i];
+			p[t] = arr[i];
 			t++;
 		}
 	}
 	
-	for(int i = 0; i < t; i++) printf("%d ", po[i]);
+	for(int i = 0; i < t; i++) printf("%d ", p[i]);
 }
 
 int main(int argc, char *argv[]) {
