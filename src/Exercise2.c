@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	Ex2(testcase, argc);
-	for(int loop = 0; loop < 10; loop++)
+	for(int loop = 0; loop < argc; loop++)
       printf("%d ", testcase[loop]);
 	return 0;
 }
